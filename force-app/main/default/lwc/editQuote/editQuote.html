@@ -6,4 +6,13 @@
     value={quoteData.endDate}
     time-zone="UTC"
   ></lightning-formatted-date-time>
+  <lightning-formatted-date-time
+  value={quoteData.startDate}
+  time-zone="UTC"
+></lightning-formatted-date-time>
+<lightning-input type="text" variant="standard" name="name" label="Quote Name" placeholder="type here..."></lightning-input>
+  <lightning-input type="Date" variant="standard" name="startDate" label="Start Date" placeholder="type here..."></lightning-input>
+  <lightning-input type="Date" variant="standard" name="endDate" label="End Date" placeholder="type here..."></lightning-input>
+  <lightning-button variant="base" label="Save" title="titleName" onclick={handleClick}></lightning-button>
+  <lightning-button variant="base" label="Cancel" title="titleName" onclick={handleCancel}></lightning-button>
 </template>
